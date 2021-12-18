@@ -7,7 +7,7 @@ const int pin_1 = 4; // Fixed Fast
 const int pin_2 = 5; // Random blinks
 const int pin_3 = 6; // Spells "SUCA" in Morse Code
 const int pin_4 = 7; // Spells "SOS" in Morse Code
-const int pin_5 = 8;
+const int pin_5 = 8; // Simulates a sinusoidal dimming with fast pulses
 const int pin_6 = 9;
 const int pin_7 = 10;
 const int pin_8 = 11;
@@ -232,7 +232,13 @@ void func_4() {
 }
 
 void func_5() {
-
+  float t = millis()/1000.0;
+  int value = 70.0 + 70 * sin( t/3 * 2.0 * PI  );
+    digitalWrite(LED_BUILTIN, HIGH);
+    delay(value);
+    Serial.println(value);
+    digitalWrite(LED_BUILTIN, LOW);
+    delay(5);
 }
 
 void func_6() {
