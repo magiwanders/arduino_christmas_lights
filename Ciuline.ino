@@ -1,4 +1,4 @@
-// This program allow an Arduino to control a (cheap) strip of lights in order to simulate an (expensive) array of christmas lights.
+// This program allows an Arduino to control a (cheap) strip of lights in order to simulate an (expensive) array of christmas lights.
 // Note: the strip does not feature individual control of leds so it is electrically equivalent to a single light, here controlled with LED_BUILTIN (pin 13).
 // Future Upgrades: analog dimming control with onw of the analog pins.
 
