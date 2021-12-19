@@ -8,4 +8,4 @@ This setup allows an Arduino to control a (cheap) strip of LED lights in order t
    - A MORSE transmission (see func_3() and func_4() in the code)
  - The LED strip only has a + and a - morset and no other control, so it is electrically equivalent to a single led (see scheme below). There is no resistor connected to the LED since the led strip consumes enough power.
  ### Schematic
- !(Schematic)[schematic.png]
+ ![Schematic](schematic.png)
